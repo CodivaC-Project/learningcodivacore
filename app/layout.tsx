@@ -23,9 +23,38 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://learning.codivacore.online"),
   title: "CodivaCore Learning — Development, Photoshoot & Modelling Training",
   description:
     "Offline & online training in Development, Brand Photoshoot, and Modelling. Expert-led courses that launch real careers.",
+  icons: {
+    icon: "/codivacode-logo.png",
+    shortcut: "/codivacode-logo.png",
+    apple: "/codivacode-logo.png",
+  },
+  openGraph: {
+    title: "CodivaCore Learning",
+    description:
+      "Offline & online training in Development, Brand Photoshoot, and Modelling. Expert-led courses that launch real careers.",
+    url: "https://learningcodivacore.vercel.app",
+    siteName: "CodivaCore Learning",
+    images: [
+      {
+        url: "/codivacode-logo.png",
+        width: 512,
+        height: 512,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CodivaCore Learning",
+    description:
+      "Offline & online training in Development, Brand Photoshoot, and Modelling.",
+    images: ["/codivacode-logo.png"],
+  },
 };
 
 export default function RootLayout({
